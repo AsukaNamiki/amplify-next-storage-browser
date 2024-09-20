@@ -13,8 +13,10 @@ import { Authenticator, Button } from "@aws-amplify/ui-react";
 
 const defaultPrefixes = [
   "public/",
-  (identityId: string) => `protected/${identityId}/`,
-  (identityId: string) => `private/${identityId}/`,
+  // (identityId: string) => `protected/${identityId}/`,
+  (identityId: string) => `protected/`,
+  // (identityId: string) => `private/${identityId}/`,
+  (identityId: string) => `private/`,
 ];
 
 export default function App() {
